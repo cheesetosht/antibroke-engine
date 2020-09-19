@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import "./App.css";
-import Nav from "./Nav";
+import Nav from "./components/Nav";
+import "./App.scss"
 
 export default class App extends Component {
   state = {};
