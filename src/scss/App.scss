@@ -7,6 +7,8 @@
 * {
   margin: 0;
   padding: 0;
+  color: var(--pfg);
+  line-height: 1.4;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
@@ -14,11 +16,10 @@
 }
 body {
   margin: 0;
-  color: var(--pfg);
-  background: var(--sbg);
+
   font-size: 14px;
   font-weight: 500;
-  line-height: 1.4;
+  background: var(--sbg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -33,6 +34,9 @@ li {
 }
 h5 {
   font-weight: 400;
+}
+a {
+  color: var(--pfg);
 }
 a,
 button {
