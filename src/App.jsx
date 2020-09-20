@@ -19,10 +19,6 @@ export default class App extends Component {
       <GlobalProvider>
         <div className="container">
           <Header />
-          <div className="mainData">
-            <h5>YOUR BALANCE</h5>
-            <h1>0</h1>
-          </div>
           <Balance />
           <Router>
             <div className="flexContainer">
