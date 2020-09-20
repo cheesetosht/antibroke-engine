@@ -4,9 +4,13 @@ import AppReducer from "./AppReducer";
 // Initial State
 const initialState = {
   transactions: [
-    { id: 1, title: "Fees", caption: "School", amount: -5000 },
-    { id: 2, title: "Food", caption: "Restaurant", amount: -1300 },
-    { id: 3, title: "Fees", caption: "School", amount: -500 },
+    {
+      id: 1,
+      title: "Mobile Bill",
+      caption: "Paid via GPay",
+      amount: -650,
+    },
+    { id: 2, title: "Salary", caption: "including overtime", amount: 30000 },
   ],
 };
 

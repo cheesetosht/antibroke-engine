@@ -106,6 +106,16 @@ textarea {
     }
   }
 }
+header {
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  font-weight: 500;
+  background: var(--sbg);
+  border-radius: 5px;
+  svg {
+    height: 20px;
+  }
+}
 .mainData {
   text-align: center;
 }
@@ -128,6 +138,9 @@ textarea {
   list-style-type: none;
   padding: 0;
   margin-bottom: 40px;
+  p {
+    margin: 0;
+  }
   li {
     background: var(--sbg);
     box-shadow: var(--box-shadow);
@@ -137,10 +150,10 @@ textarea {
     padding: 10px;
     margin: 10px 0;
     &.plus {
-      border-right: 5px solid #2ecc71;
+      border-right: 5px solid #2196f3;
     }
     &.minus {
-      border-right: 5px solid #c0392b;
+      border-right: 5px solid #ff5722;
     }
   }
 }

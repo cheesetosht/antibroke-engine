@@ -5,7 +5,7 @@ import {
   Route,
   Switch,
 } from "react-router-dom";
-import Nav from "./components/Nav";
+import Header from "./components/Header";
 import History from "./components/History";
 import Form from "./components/Form";
 import Balance from "./components/Balance";
@@ -18,7 +18,7 @@ export default class App extends Component {
     return (
       <GlobalProvider>
         <div className="container">
-          <Nav />
+          <Header />
           <div className="mainData">
             <h5>YOUR BALANCE</h5>
             <h1>0</h1>

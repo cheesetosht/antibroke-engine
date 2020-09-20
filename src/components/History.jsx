@@ -4,15 +4,17 @@ import { GlobalContext } from "../context/GlobalState";
 export default function History() {
   const { deleteTransaction } = useContext(GlobalContext);
   const { transactions } = useContext(GlobalContext);
-  const sign = transactions.amount < 0 ? "-" : "+";
   return (
     <>
       <ul className="list">
         {transactions.map((transactions) => (
           <li className={transactions.amount < 0 ? "minus" : "plus"}>
             <div className="flexContainer">
-              <span>{transactions.title}</span>
-              <span>
+              <div>
+                {transactions.title}
+                <p>{transactions.caption}</p>
+              </div>
+              <div>
                 <button
                   onClick={() => deleteTransaction(transactions.id)}
                   className="delete-btn"
@@ -33,10 +35,8 @@ export default function History() {
                     />
                   </svg>
                 </button>
-                <h3>
-                  {sign} Rs.{Math.abs(transactions.amount)}
-                </h3>
-              </span>
+                <h3>Rs.{Math.abs(transactions.amount)}</h3>
+              </div>
             </div>
           </li>
         ))}

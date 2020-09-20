@@ -1,7 +1,6 @@
 import React from "react";
-import "../scss/components.scss";
 
-export default function Nav() {
+export default function Header() {
   return (
     <>
       <header className="flexContainer">

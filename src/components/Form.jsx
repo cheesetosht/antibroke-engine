@@ -15,6 +15,7 @@ export default function Form() {
       id: Math.floor(Math.random() * 100000000),
       title,
       amount: +amount,
+      caption,
     };
 
     addTransaction(newTransaction);
@@ -27,14 +28,7 @@ export default function Form() {
         placeholder="Transaction Title"
         type="text"
       />
-      <select>
-        <option value="1" selected>
-          Essentials
-        </option>
-        <option value="2">Leisure</option>
-        <option value="3">Emergency</option>
-        <option value="4">Others</option>
-      </select>
+
       <input
         value={amount}
         onChange={(e) => setAmount(e.target.value)}
