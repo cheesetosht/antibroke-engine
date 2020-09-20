@@ -124,7 +124,49 @@ textarea {
     color: #ff5722;
   }
 }
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+  li {
+    background: var(--sbg);
+    box-shadow: var(--box-shadow);
+    color: #333;
+    border-radius: 5px;
 
+    padding: 10px;
+    margin: 10px 0;
+    &.plus {
+      border-right: 5px solid #2ecc71;
+    }
+    &.minus {
+      border-right: 5px solid #c0392b;
+    }
+  }
+}
+
+.delete-btn {
+  position: absolute;
+  transform: translate(-20px, 5px);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  svg {
+    position: relative;
+    height: 14px;
+    width: 14px;
+  }
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 300px;
+  }
+}
 @media only screen and (max-width: 600px) {
   .container {
     max-width: 85vw;
