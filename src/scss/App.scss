@@ -96,6 +96,14 @@ textarea {
     flex-direction: column;
     text-align: center;
     margin: 20px auto;
+    button[type="submit"] {
+      width: 100%;
+      margin-top: 5px;
+      padding: 10px;
+      font-weight: 700;
+      background: #1878c7;
+      border-radius: 5px;
+    }
   }
 }
 .mainData {
